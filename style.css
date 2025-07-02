@@ -1,0 +1,7 @@
+/* 1. Styles for the entire page */
+@font-face {
+    font-family: "Zen Dots";
+    src: url("./fonts/ZenDots-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
