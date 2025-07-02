@@ -15,3 +15,9 @@
     color: orange;
     text-shadow: 4px 4px 10px darkblue;
 }
+
+/* 3. Style for the Body */
+body {
+    padding-top: 40px;
+    font-family: "Zen Dots", sans-serif;
+    background-image: url("img/stars_at_nighttime.jpg");
