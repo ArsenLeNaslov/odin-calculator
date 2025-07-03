@@ -229,7 +229,8 @@ a:active {
   width: 60px;
   height: 60px;
   margin: 0.5em;
-  background-color: orange;
+  background-color: transparent;
+  box-shadow: 0 0 30px cyan;  
   color: white;
   border-radius: 50%;
   transition: background-color 0.3s ease;
