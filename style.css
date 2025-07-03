@@ -111,3 +111,51 @@ body {
     flex-grow: 1;
     color: rgb(255, 253, 243);
 }
+
+/* 11. Scrollbar for result area */
+.result::-webkit-scrollbar{
+    height: 6px;
+}
+.result::-webkit-scrollbar-track{
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.result::-webkit-scrollbar-thumb{
+    border-radius: 4px;
+    background-color: lightblue;
+}
+
+/* 12. Left-side flex column */
+.sinistra{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+/* 13. Number buttons container */
+.numeri{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* 14. Operator buttons container */
+.op{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px
+}
+
+/* 15. Right-side buttons alignment */
+.dexter > button{
+    margin-left: auto;
+}
