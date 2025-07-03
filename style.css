@@ -45,6 +45,7 @@ body {
     align-items: center;
     box-shadow: 0 0 30px cyan;
     border: 5px solid orange;
+    transition: 0.2s;
 }
 
 /* 5. Calculator container layout */
@@ -206,4 +207,49 @@ button:active{
 .active{
     scale: 1.1;
     background-color: navy;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: darkmagenta;
+  font-weight: bold;
+}
+
+/* 20. Background Music Button */
+#toggle-music {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  bottom: 2vh;
+  right: 2vw;
+  width: 60px;
+  height: 60px;
+  margin: 0.5em;
+  background-color: darkmagenta;
+  color: white;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+}
+
+#toggle-music:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+  filter: drop-shadow(0 0 0.75rem darkorange) drop-shadow(0 0 0.75em darkblue);
+  transition: 0.3s;
+}
+
+/* 21. Ensures elements adjust based on screen width :*/
+@media (max-width: 900px) {
+
+    footer {
+        position: relative;
+        bottom: 0;
+        height: auto;
+        padding: 10px;
+    }
 }
