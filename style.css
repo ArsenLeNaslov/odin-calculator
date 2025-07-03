@@ -18,7 +18,55 @@
 
 /* 3. Style for the Body */
 body {
-    padding-top: 40px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     font-family: "Zen Dots", sans-serif;
     background-image: url("img/stars_at_nighttime.jpg");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+
+/* 4. Background effect for main container */
+.nebula{
+    background-color: transparent;
+    width: 420px;
+    height: 620px;
+    margin-top: 40px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 30px cyan;
+    border: 5px solid orange;
+}
+
+/* 5. Calculator container layout */
+.abacus {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    height: 100vh;
+}
+
+/* 6. Inner flex container for centering content */
+.intra {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    height: 100%;
 }
