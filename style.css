@@ -229,7 +229,7 @@ a:active {
   width: 60px;
   height: 60px;
   margin: 0.5em;
-  background-color: darkmagenta;
+  background-color: orange;
   color: white;
   border-radius: 50%;
   transition: background-color 0.3s ease;
