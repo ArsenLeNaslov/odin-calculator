@@ -159,3 +159,51 @@ body {
 .dexter > button{
     margin-left: auto;
 }
+
+/* 16. Footer Styling & Alignment */
+footer {
+  color: orange;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: 14px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-shadow: 4px 4px 20px darkblue;
+  z-index: 10;
+  background: transparent;
+}
+
+/* 17. Calculator button styling */
+button{
+    user-select: none;
+    padding: 10px 25px;
+    font-size: 30px;
+    flex-basis: 40px;
+    text-align: center;
+    flex-basis: 120px;
+    flex-shrink: 1;
+    width: 70px;
+    height: 70px;
+    font-family: "Zen Dots", sans-serif;
+    color: rgb(255, 253, 243);
+    font-size: 35px;
+    font-weight: 600;
+    border: none;
+    border-radius: 12pt;
+    outline: none;
+}
+
+/* 18. Button press (active) effect */
+button:active{
+    scale: 1.1;
+    background-color: navy;
+}
+
+/* 19. Active button state styling (for JS toggling) */
+.active{
+    scale: 1.1;
+    background-color: navy;
+}
