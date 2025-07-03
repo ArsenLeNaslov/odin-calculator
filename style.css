@@ -70,3 +70,44 @@ body {
     gap: 40px;
     height: 100%;
 }
+
+/* 7. Calculator panel layout */
+.calc {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 600px;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    border-radius: 12pt;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* 8. Result display area styling */
+.result {
+    overflow-y: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+    direction: ltr;
+    width: 400px;
+    height: 160px;
+    font-size: 50px;
+    font-family: "Roboto", sans-serif;
+    text-align: right;
+    padding: 10px;
+    border-radius: 12px; 
+}
+
+/* 9. Equation display styling */
+.aequatio{
+    height: 60%;
+    flex-grow: 1;
+    color: rgba(255, 253, 243, 0.573);
+}
+
+/* 10. Result value styling */
+.aequales{
+    flex-grow: 1;
+    color: rgb(255, 253, 243);
+}
