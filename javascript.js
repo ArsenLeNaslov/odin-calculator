@@ -198,6 +198,87 @@ calculatorButtons.forEach(element => {
     });
 });
 
+// 9. Handle AC/C button logic
+
+// 9.1 Update to use 'AC' as the identifier
+const clearButton = document.querySelector('#AC-key');
+
+// 9.2 Helper to update the AC/C label
+function updateClearButtonLabel() {
+    if (resultDisplay.textContent.length > 0) {
+        clearButton.textContent = 'C';
+    } else {
+        clearButton.textContent = 'AC';
+    }
+}
+
+// 9.3 Initial label
+updateClearButtonLabel();
+clearButton.addEventListener('click', () => {
+    if (clearButton.textContent === 'AC') {
+        clearScreen();
+    } else if (clearButton.textContent === 'C') {
+        resultDisplay.textContent = '';
+    }
+    updateClearButtonLabel();
+});
+
+// 9.4 Update label after any button click
+numberButtonSection.addEventListener('click', updateClearButtonLabel);
+operatorButtonSection.addEventListener('click', updateClearButtonLabel);
+
+// 10. Add keyboard support for calculator input and operations
+document.addEventListener("keydown", (event) => {
+    if(event.repeat){
+        return;
+    }
+    const key = event.key;
+    let keyId;
+    
+    if(key === 'Enter' || key === '='){
+        keyId = '=-key';
+    }
+    else if(key === "Backspace"){
+        keyId = 'AC-key';
+    }
+    else{
+        keyId = `${key}-key`
+    }
+    const button = document.getElementById(keyId);
+    if(keyId === 'AC-key'){
+        button.classList.add('active');
+        // Simulate AC/C logic
+        if (clearButton.textContent === 'AC') {
+            clearScreen();
+        } else if (clearButton.textContent === 'C') {
+            resultDisplay.textContent = '';
+        }
+        updateClearButtonLabel();
+    }
+    else if (button) {
+        button.click();
+    }
+});
+
+document.addEventListener("keyup", (event) => {
+    const key = event.key;
+    let keyId;
+    
+    if(key === 'Enter' || key === '='){
+        keyId = '=-key';
+    }
+    else if(key === "Backspace"){
+        keyId = 'AC-key';
+    }
+    else{
+        keyId = `${key}-key`
+    }
+    const button = document.getElementById(keyId);
+    if (button) {
+        button.classList.remove('active');
+    }
+});
+
 // 11. Background music: play on first user interaction and allow toggling mute/unmute
 
 // 11.1 Start music on 1st user's interaction
