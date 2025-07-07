@@ -6,18 +6,12 @@
     font-style: normal;
 }
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 /* 2. On-screen title styling */
 .title {
     font-optical-sizing: auto;
     font-size: 40px;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
     color: orange;
     text-shadow: 4px 4px 10px darkblue;
 }
@@ -29,6 +23,8 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    box-sizing: border-box;
+    padding-bottom: 0;
     font-family: "Zen Dots", sans-serif;
     background-image: url("img/stars_at_nighttime.jpg");
     background-color: black;
@@ -36,22 +32,22 @@ body {
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 /* 4. Background effect for main container */
 .nebula{
     background-color: transparent;
-    width: 520px;
-    height: 620px;
-    margin-top: 40px;
+    width: 340px;
+    height: auto;
+    margin-top: 0px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     box-shadow: 0 0 30px cyan;
     border: 5px solid orange;
-    transition: 0.2s;
 }
 
 /* 5. Calculator container layout */
@@ -62,8 +58,8 @@ body {
     flex-shrink: 1;
     align-items: center;
     justify-content: space-between;
-    gap: 40px;
-    height: 100vh;
+    gap: 10px;
+    height: auto;
 }
 
 /* 6. Inner flex container for centering content */
@@ -85,7 +81,7 @@ body {
     flex-basis: 600px;
     justify-content: center;
     align-items: center;
-    width: 700px;
+    width: 520px;
     border-radius: 12pt;
     padding: 20px;
     gap: 20px;
@@ -101,38 +97,51 @@ body {
     height: 160px;
     font-size: 50px;
     font-family: "Roboto", sans-serif;
-    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    text-align: center;
+    gap: 0;
     padding: 10px;
     border-radius: 12px; 
 }
 
-/* 9. Equation display styling */
+/* 9. Equation and result value styling */
+.aequatio, .aequales {
+    width: 100%;
+}
+
 .aequatio{
-    height: 60%;
-    flex-grow: 1;
-    color: rgba(255, 253, 243, 0.573);
+    align-self: flex-start;
+    font-size: 0.5em;
+    color: rgba(255, 253, 243, 0.7);
+    margin-bottom: 0;
 }
 
-/* 10. Result value styling */
 .aequales{
-    flex-grow: 1;
+    align-self: flex-end;
+    font-size: 1.1em;
     color: rgb(255, 253, 243);
+    margin-top: 0;
 }
 
-/* 11. Scrollbar for result area */
+/* 10. Scrollbar for result area */
 .result::-webkit-scrollbar{
     height: 6px;
 }
+
 .result::-webkit-scrollbar-track{
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
 }
+
 .result::-webkit-scrollbar-thumb{
     border-radius: 4px;
     background-color: lightblue;
 }
 
-/* 12. Left-side flex column */
+/* 11. Left-side flex column */
 .sinistra{
     display: flex;
     flex-direction: column;
@@ -142,7 +151,7 @@ body {
     gap: 30px;
 }
 
-/* 13. Number buttons container */
+/* 12. Number buttons container */
 .numeri{
     display: flex;
     flex-direction: row-reverse;
@@ -153,7 +162,7 @@ body {
     gap: 20px;
 }
 
-/* 14. Operator buttons container */
+/* 13. Operator buttons container */
 .op{
     display: flex;
     flex-direction: row;
@@ -162,54 +171,54 @@ body {
     gap: 20px
 }
 
-/* 15. Right-side buttons alignment */
-.dexter > button{
-    margin-left: auto;
-}
-
-/* 16. Footer Styling & Alignment */
+/* 14. Footer Styling & Alignment */
 footer {
   color: orange;
-  position: fixed;
+  position: static;
   left: 0;
   bottom: 0;
   width: 100%;
-  font-size: 14px;
-  margin-top: 15px;
-  margin-bottom: 10px;
+  font-size: 12px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   text-align: center;
   text-shadow: 4px 4px 20px darkblue;
   z-index: 10;
   background: transparent;
+  padding-bottom: 0;
+  max-height: none;
+  overflow: visible;
+  display: block;
+  clear: both;
+  flex-shrink: 0;
+  box-sizing: border-box;
 }
 
-/* 17. Calculator button styling */
+/* 15. Calculator button styling */
 button{
     user-select: none;
     padding: 10px 25px;
-    font-size: 30px;
-    flex-basis: 40px;
-    text-align: center;
+    font-size: 28px;
     flex-basis: 120px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-shrink: 1;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     font-family: "Zen Dots", sans-serif;
     color: rgb(255, 253, 243);
-    font-size: 35px;
     font-weight: 600;
-    border: none;
+    border: 4px solid orange;
     border-radius: 12pt;
     outline: none;
+    background: rgba(0,0,0,0.3);
+    box-shadow: 0 0 20px 0 cyan;
 }
 
-/* 18. Button press (active) effect */
-button:active{
-    scale: 1.1;
-    background-color: navy;
-}
-
-/* 19. Active button state styling (for JS toggling) */
+/* 16. Button press (active) effect and active state styling (for JS toggling) */
+button:active,
 .active{
     scale: 1.1;
     background-color: navy;
@@ -223,7 +232,7 @@ a:active {
   font-weight: bold;
 }
 
-/* 20. Background Music Button */
+/* 17. Background Music Button */
 #toggle-music {
   display: flex;
   position: fixed;
@@ -235,9 +244,7 @@ a:active {
   width: 60px;
   height: 60px;
   margin: 0.5em;
-  background-color: transparent;
-  box-shadow: 0 0 30px cyan;  
-  color: white;
+  background-color: rgba(139, 0, 139, 0);
   border-radius: 50%;
   transition: background-color 0.3s ease;
   z-index: 1000;
@@ -250,13 +257,78 @@ a:active {
   transition: 0.3s;
 }
 
-/* 21. Ensures elements adjust based on screen width :*/
+/* 18. Ensures elements adjust based on screen width */
 @media (max-width: 900px) {
-
     footer {
-        position: relative;
+        position: static;
         bottom: 0;
         height: auto;
-        padding: 10px;
+        padding: 10px 0 2em 0;
+        max-height: none;
+        overflow: visible;
+        display: block;
+        clear: both;
+        flex-shrink: 0;
+        box-sizing: border-box;
     }
+}
+
+/* 19. Responsive adjustments for mobile devices */
+@media (max-width: 600px) {
+  .calc {
+    width: 98vw;
+    min-width: 0;
+    max-width: 100vw;
+    flex-basis: auto;
+    padding: 5vw 1vw;
+    gap: 8px;
+    border-radius: 10px;
+  }
+  .result {
+    width: 90vw;
+    min-width: 0;
+    max-width: 100vw;
+    height: 80px;
+    font-size: 7vw;
+    padding: 4vw 2vw;
+    border-radius: 8px;
+  }
+  button {
+    font-size: 6vw;
+    width: 16vw;
+    height: 16vw;
+    min-width: 44px;
+    min-height: 44px;
+    padding: 0;
+    border-radius: 8px;
+  }
+  .abacus {
+    gap: 4vw;
+  }
+  .intra {
+    gap: 6vw;
+  }
+  .sinistra {
+    gap: 4vw;
+  }
+  .numeri, .op {
+    gap: 3vw;
+  }
+  .title {
+    font-size: 7vw;
+    margin-bottom: 4vw;
+  }
+  footer {
+    font-size: 3vw;
+    padding: 2vw 0 2vw 0;
+  }
+  #toggle-music {
+    width: 14vw;
+    height: 14vw;
+    font-size: 7vw;
+    min-width: 44px;
+    min-height: 44px;
+    bottom: 2vw;
+    right: 2vw;
+  }
 }
