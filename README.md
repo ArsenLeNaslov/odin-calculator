@@ -11,3 +11,6 @@ Cosmic-themed interactive calculator built with HTML, CSS, and JavaScript. Inspi
 - Background Music: Toggle ambient space music on/off with a floating button.
 - Accessible: Large buttons and clear display for easy use on all devices.
 - Attribution Footer: Credits for icons, background, and music, with links to original sources.
+
+  https://arsenlenaslov.github.io/odin-calculator/
+![image](https://github.com/user-attachments/assets/ee504a2d-7b82-4f6c-a8d5-bd09b143b0a6)
