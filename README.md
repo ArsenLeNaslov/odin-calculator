@@ -3,7 +3,7 @@
 
 Cosmic-themed interactive calculator built with HTML, CSS, and JavaScript. Inspired by the wonders of the universe, this calculator offers a visually engaging and responsive experience, complete with ambient space music and glowing UI elements.
 
-#Features
+# Features
 - Basic Arithmetic: Perform addition, subtraction, multiplication, and division.
 - Keyboard & Touch Support: Works seamlessly with both mouse/touch and keyboard input.
 - Responsive Design: Fully functional and visually appealing on desktops, laptops, tablets, and mobile phones.
