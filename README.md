@@ -13,4 +13,5 @@ Cosmic-themed interactive calculator built with HTML, CSS, and JavaScript. Inspi
 - Attribution Footer: Credits for icons, background, and music, with links to original sources.
 
   https://arsenlenaslov.github.io/odin-calculator/
-![image](https://github.com/user-attachments/assets/ee504a2d-7b82-4f6c-a8d5-bd09b143b0a6)
+![image](https://github.com/user-attachments/assets/2e2a8306-ce40-4f9f-8e50-7fe66ba65032)
+
