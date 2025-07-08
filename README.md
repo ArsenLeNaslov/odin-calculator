@@ -1,5 +1,4 @@
-# odin-calculator
-# "Abacus Digitalis Odinis"
+# Odin Calculator - "Abacus Digitalis Odinis"
 
 A cosmic-themed interactive calculator built with HTML, CSS, and JavaScript offers a visually engaging and responsive experience, complete with ambient space music and glowing UI elements.
 
