@@ -13,7 +13,5 @@ A cosmic-themed interactive calculator built with HTML, CSS, and JavaScript offe
 - Attribution Footer: Credits for icons, background, and music, with links to sources.
 
   https://arsenlenaslov.github.io/odin-calculator/
-  
-![image](https://github.com/user-attachments/assets/38a06bbc-46d9-40a6-9557-01f05882d1e5)
 
-
+![Abacus Digitalis Odinis](https://github.com/user-attachments/assets/c8448e14-3794-4995-8472-832f85126792)
