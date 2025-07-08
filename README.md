@@ -1,6 +1,6 @@
 # Odin Calculator - "Abacus Digitalis Odinis"
 
-A cosmic-themed interactive calculator built with HTML, CSS, and JavaScript offers a visually engaging and responsive experience, complete with ambient space music and glowing UI elements.
+A cosmic-themed interactive calculator built with HTML, CSS, and JavaScript which offers a visually engaging and responsive experience, complete with ambient space music and glowing UI elements.
 
 # Features
 - Basic Arithmetic: Perform addition, subtraction, multiplication, and division.
